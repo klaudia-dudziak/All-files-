@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <title>KARUZELA</title>        
+    </head>
+    <body>   
+    <p>
+        View:
+        <a href="#carousel-cell1">Cell 1</a>,
+        <a href="#carousel-cell2">Cell 2</a>,
+        <a href="#carousel-cell3">Cell 3</a>,
+        <a href="#carousel-cell4">Cell 4</a>,
+        <a href="#carousel-cell5">Cell 5</a>
+    </p>  
+    <div class="main-carousel" style="background-color: lightblue;">
+        <!-- style="background-image: url(`https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260`);" -->
+
+        <div class="carousel-cell" id="carousel-cell1">
+            <div class='container'>Moskwa</div>
+            <img src="https://images.pexels.com/photos/753339/pexels-photo-753339.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+        </div>
+        <div class="carousel-cell" id="carousel-cell2" >
+            <div class='container'>Paryż</div>
+            <img src='https://images.pexels.com/photos/342113/pexels-photo-342113.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'>
+        </div>
+        <div class="carousel-cell" id="carousel-cell3" >
+            <div class='container'>Budapeszt</div>
+            <img src='https://images.pexels.com/photos/358484/pexels-photo-358484.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'>
+        </div>
+        <div class="carousel-cell" id="carousel-cell4" >
+            <div class='container'>Tokyo</div>
+            <img src='https://images.pexels.com/photos/1637802/pexels-photo-1637802.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'>
+        </div>
+        <div class="carousel-cell" id="carousel-cell5">
+            <div class='container'>NYC</div>
+            <img src='https://images.pexels.com/photos/417054/pexels-photo-417054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'>
+        </div>
+    </div>
+    <div class="progress-bar"></div>
+
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
+        <script>
+            var elem = document.querySelector('.main-carousel');
+            var flkty = new Flickity( elem, {
+            // options
+            cellAlign: 'left',
+            contain: true
+            });
+            var flkty = new Flickity( '.main-carousel', {
+            });
+            var flkty = new Flickity('.carousel');
+
+            var progressBar = document.querySelector('.progress-bar')
+
+            flkty.on( 'scroll', function( progress ) {
+            progress = Math.max( 0, Math.min( 1, progress ) );
+            progressBar.style.width = progress * 100 + '%';
+            });
+        </script>
+    </body>
+</html>

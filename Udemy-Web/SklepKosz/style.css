@@ -1,0 +1,102 @@
+html, body, body div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: arial;
+}
+
+input
+{
+    display: block;
+    margin: 10px;
+}
+
+h1
+{
+    font-size: 20px;
+}
+header
+{
+    margin: 5px 20px;
+}
+#produkty
+{
+    list-style: none;
+    width: 60%;
+    float: left;
+}
+#produkty li
+{
+    float: left;
+    margin: 10px;
+    width: 200px;
+    height: 210px;
+}
+.przedmiot
+{
+    position: relative;
+    cursor: move;
+}
+.przedmiot .opis
+{
+    position: absolute;
+    background: rgba(0,0,0, 0.5);
+    bottom: 0px;
+    color: #f0dddd;
+    width: 200px;
+    text-align: center;
+    padding: 5px 0px;
+    display: none;
+}
+#naglowek_koszyka
+{
+    text-align: center;
+    font-size: 25px;
+}
+#kontener_koszyka
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    background-color: #CCC;
+    width: 25%;
+    padding: 10px 5%;
+}
+#cena
+{
+    text-align: right;
+    margin: 10px 0px;
+}
+#info_przeniesienie
+{
+    display: none;
+    font-size: 20px;
+    text-align: center;
+}
+#koszyk
+{
+    list-style: none;
+}
+.produkt_w_koszyku
+{
+    border-bottom: 1px dotted teal;
+    padding: 4px 10px;
+}
+.cena_w_koszyku
+{
+    position: absolute;
+    right: 20px;
+}

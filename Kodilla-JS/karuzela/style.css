@@ -1,0 +1,27 @@
+.carousel-cell {
+    width: 100%; 
+    max-width: 1200px;
+    min-height: 250px; 
+    height: 50vh;
+    margin-right: 10px;
+    background-size: cover;
+  }
+
+  .carousel-cell img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    height: 90%;
+  }
+
+  .carousel-cell div {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .progress-bar {
+    height: 20px;
+    width: 0;
+    background: #333;
+  }
+  

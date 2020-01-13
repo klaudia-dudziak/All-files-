@@ -1,0 +1,95 @@
+body {
+  background-color: red;
+  margin: 0;
+  padding: 0; }
+
+header img {
+  width: 10px;
+  border-left: solid gray 1px;
+  padding-left: 10px; }
+
+header ul li {
+  margin: 0;
+  padding-right: 10px;
+  list-style-type: none;
+  display: inline-block;
+  justify-content: flex-end; }
+
+header a {
+  text-decoration: none;
+  color: gray; }
+
+header li:hover {
+  background-color: aqua; }
+
+.container1 {
+  display: -webkit-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: solid red 1px;
+  justify-content: flex-end;
+  background-color: white; }
+
+header {
+  width: 100%;
+  position: fixed; }
+
+* {
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+
+div {
+  border: 1px solid black; }
+
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*="col"] {
+  float: left;
+  padding: 10px; }
+
+@media (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.334%; }
+
+  .col-xl-2 {
+    width: 16.667%; }
+
+  .col-xl-3 {
+    width: 25%; }
+
+  .col-xl-4 {
+    width: 33.334%; }
+
+  .col-xl-5 {
+    width: 41.667%; }
+
+  .col-xl-6 {
+    width: 50%; }
+
+  .col-xl-7 {
+    width: 58.334%; }
+
+  .col-xl-8 {
+    width: 66.667%; }
+
+  .col-xl-9 {
+    width: 75%; }
+
+  .col-xl-10 {
+    width: 83.334%; }
+
+  .col-xl-11 {
+    width: 91.667%; }
+
+  .col-xl-12 {
+    width: 100%; } }
+
+/*# sourceMappingURL=proba-grid.css.map */

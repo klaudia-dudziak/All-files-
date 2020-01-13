@@ -1,0 +1,55 @@
+body {
+    background-color: lavender;
+}
+
+form {
+    margin: 5px;
+    display: block;
+    text-align: center;
+}
+
+.btn {
+    width: 130px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: mediumpurple;
+    font-weight: 400;
+    color: white;
+    border: 1px solid blueviolet;
+}
+
+button {
+    border-radius: 50%;
+    background-color: lavenderblush;
+    font-weight: 900;
+    text-align: center;
+    border: 2px double plum;
+    color: mediumorchid;
+    font-size: 10px;
+}
+
+input {
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+h1 {
+    text-align: center;
+}
+div {
+    text-align: center;
+}
+ol {
+    display: inline-block;
+}
+
+li {
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+li::first-letter {
+    text-transform: uppercase;
+}

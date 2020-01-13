@@ -1,0 +1,10 @@
+input {
+    background-color: lightblue;
+    
+}
+
+#pokazCzas {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px 60px; 
+}

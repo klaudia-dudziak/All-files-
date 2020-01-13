@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head> 
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Teko&display=swap" rel="stylesheet">
+    <title> Moje papier kamień nożyczki</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+ 
+<body>
+    <h3> Witaj w grze!</h3>
+    <h1> Kamień &nbsp;Papier &nbsp;Nożce</h1>
+
+    <div id="newGame_layer" class="new-game-layer-style">
+            <h3>Podaj imię gracza:</h3>
+            <input type="text" name="player_name" placeholder="Wpisz swoje imię">
+            <button>Start</button>
+    </div>
+    
+    <div class="images">
+        <h2>Wybierz dłoń:</h2>
+        <img data-option="Papier" src="papier.png" alt="" title="Papier">
+        <img data-option="Kamień" src="kamień.png" alt="" title="Kamień">
+        <img data-option="Nożyce" src="nozyce.png" alt="" title="Nożyce">
+    </div>
+
+    <button class="btnPlay"> Zagraj! </button>
+<div class="panels">
+    <div class="panelLeft">
+        <p class="playerChoose">Wybór gracza <span class='playerName'></span> : &nbsp; <span class="choose"></span></p>
+        <p class="aiChoose">Wybór przeciwnika : &nbsp; <span></span></p>
+        <p class="whoWin">Wygrana: <span></span></p>
+    </div>
+
+    <div class="panelRight">
+            <p class="counter"> Liczba gier: <span>0</span></p>
+        <div class="scoreCounter">
+            <p class="winsCounter"> Wygrane: <span>0</span></p>
+            <p class="lossCounter"> Przegrane: <span>0</span></p>
+            <p class="drawCounter"> Remisy: <span>0</span></p>
+        </div>
+    </div>
+    
+
+    <script src="WelcomePage.js"></script>
+    <script src="User.js"></script>
+    <script src="Main.js"></script>
+</body>
+</html>  

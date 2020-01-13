@@ -1,0 +1,78 @@
+body {
+    background-color: gainsboro;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    display: block;
+}
+
+#meanu a:visited {
+    color: white
+}
+
+#meanu a:link {
+    color: white
+}
+
+#container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu > li {
+    float: left;
+    font-size: 11px;
+}
+
+#menu > li > a {
+    padding: 15px;
+    background: linear-gradient(teal, lightskyblue, lightSteelBlue);
+    border-left: 1px solid rgb(203, 223, 231);
+    opacity: 0.8;
+    transition: 0.9s;
+}
+
+#menu > li > a:hover  {
+    opacity: 1;
+    background: linear-gradient(teal, lightskyblue, teal);
+    
+}
+
+#menu > li:first-child > a {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#menu > li:last-child > a {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#menu > li ul li a  {
+    padding: 10px 30px;
+    border-bottom: 1px solid rgb(203, 223, 223);
+    transition: 0.3s;
+}
+
+#menu > li ul li a:hover {
+    opacity: 0.6;
+}
+
+
+#menu > li ul {
+    position: absolute;
+    background: linear-gradient(teal, lightskyblue, lightSteelBlue);
+    opacity: 0;
+    font-size: 9.5px;
+}
+
+#menu > li:hover ul {
+    opacity: 1;
+    transition: 0.7s;
+}
+

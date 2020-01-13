@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="style2.css"> 
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <title>KARUZELA</title>       
+    </head>
+    <body>
+        <main>
+            <h1>Lista Książek</h1>
+
+            <div id="town-list"></div>
+        </main>
+        
+        <!-- INCLUDES -->
+        <script src="jquery.js"></script>
+        <script src="mustache.js-master/mustache.js"></script>
+ 
+        <!-- TEMPLATES -->      
+        <script id="town-template" type="x-tmpl-mustache">   
+        <ul>         
+            {{#town}}
+                <div class="main-carousel" style="background-color: lightblue;"> 
+                    <div class="carousel-cell">
+                    <h2>{{townName}}</h2>
+                    <img src="{{{logoImage}}}"/> <br />
+                    <span>Opis miasta: {{opis}} </span> <br />
+                </div>
+            {{/town}}
+        </ul>
+        </script>
+    
+        <!-- LOGIC -->
+        <script>  
+        var library = {town: [
+                    {townName: 'Moskwa', logoImage: 'https://images.pexels.com/photos/753339/pexels-photo-753339.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', opis: 'stolica Rosji', carousel: 'carousel-cell1'},
+                    {townName: 'Paryż', logoImage: 'https://images.pexels.com/photos/342113/pexels-photo-342113.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', opis: 'stolica Francji', carousel: 'carousel-cell2'},
+                    {townName: 'Budapeszt', logoImage: 'https://images.pexels.com/photos/358484/pexels-photo-358484.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', opis: 'stolica Węgier', carousel: 'carousel-cell3'},
+                    {townName: 'Tokyo', logoImage: 'https://images.pexels.com/photos/1637802/pexels-photo-1637802.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', opis: 'stolica Japonii', carousel: 'carousel-cell4'},
+                    {townName: 'NYC', logoImage: 'https://images.pexels.com/photos/417054/pexels-photo-417054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', opis: 'miasto w USA', carousel: 'carousel-cell5'},
+                ]};
+ 
+        var townTemplate = jQuery('#town-template').html();
+ 
+        var content = Mustache.render(townTemplate, library);
+ 
+        jQuery('#town-list').html(content);
+ 
+        </script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
+        <script>
+            var elem = document.querySelector('.main-carousel');
+            var flkty = new Flickity( elem, {
+            // options
+            cellAlign: 'left',
+            contain: true
+            });
+            var flkty = new Flickity( '.main-carousel', {
+            });
+            var flkty = new Flickity('.carousel');
+
+            var progressBar = document.querySelector('.progress-bar')
+
+            flkty.on( 'scroll', function( progress ) {
+            progress = Math.max( 0, Math.min( 1, progress ) );
+            progressBar.style.width = progress * 100 + '%';
+            });
+        </script>
+    </body>
+</html>

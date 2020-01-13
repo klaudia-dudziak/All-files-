@@ -1,0 +1,73 @@
+ 
+ #scena
+ {
+     width: 200px;
+     height: 200px;
+     border: 1px solid #CCC;
+     margin: 140px;
+     position: relative;
+     perspective: 1000px;
+ 
+ }
+ #kostka
+ {
+     position: absolute;
+     transform-style: preserve-3d;
+     width: 100%;
+     height: 100%;    
+     animation: obracaniekostki 4cs linear infinite alternate;
+ }
+ .sciana
+ {
+     opacity: 0.6;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     
+     font-size: 50px;
+     color: white;
+     line-height: 200px;
+     text-align: center;
+ }
+ div.front
+ {
+     background-color: red;
+     transform: translateZ(100px);
+ }
+ div.back
+ {
+     background-color: blue;
+     transform: rotateX(180deg) rotateZ(180deg) translateZ(100px);
+ }
+ div.left
+ {
+     background-color: yellow;
+     transform: rotateY(-90deg) translateZ(100px);
+ 
+ }
+ div.right
+ {
+     background-color: green;
+     transform: rotateY(90deg) translateZ(100px);
+ }
+ div.top
+ {
+     background-color: teal;
+     transform: rotateX(90deg) translateZ(100px);
+ }
+ div.bottom
+ {
+     background-color: orange;
+     transform: rotateX(-90deg) translateZ(100px);
+ }
+ 
+ @keyframes obracaniekostki
+ {
+     from 
+     {
+     }
+     to
+     {
+         transform: rotateY(360deg) rotateZ(360deg);
+     }
+ }
