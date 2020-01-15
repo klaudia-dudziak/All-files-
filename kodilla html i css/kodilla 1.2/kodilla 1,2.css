@@ -1,0 +1,23 @@
+body {background-color: darksalmon;
+    margin: 0px;}
+
+.content {max-width: 500px;
+        margin: 0 auto; /* auto wysrodkowywuje */
+        background-color: white;
+        padding: 20px;
+                            }
+h1 {text-align: center;
+                            }
+.content h1 {padding: 30px;
+            background-color: #f39c12;
+            color: white;
+                            }
+.footer {background-color: #7f8c8d;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin: 0px;
+        padding-top: 30px;
+        padding-right: 0px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+                            }

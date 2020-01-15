@@ -1,0 +1,33 @@
+body {font-family: "Quicksand"; 
+    margin: 0; 
+    background: lightblue;
+    color: white;
+}
+
+ul {padding: 0;
+    margin: 0;
+    list-style-type: none;
+    }
+
+nav li {background-color: #4577ED; /* nav ul li */
+        text-align: center;
+        display: inline-block;
+}
+nav {background-color: #4577ED;
+        text-align: center;
+}
+a { height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    }
+
+
+li:hover { background-color: #3255a7;
+}
+nav ul ul li {display: block;                
+}
+
+nav ul {display: none;
+}

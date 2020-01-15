@@ -1,0 +1,49 @@
+body {margin: 0;
+    background-color: grey;
+    }
+
+    
+header {margin: 0px auto;
+        background-image: url(https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        width: 60%; 
+        height: 20%;
+        padding: 30px;
+        text-align: center;
+        color: azure;
+        }
+header h1 { font-size: 75px;
+            font-family: inherit;
+}
+header p { font-size: 20px;
+           font-family: Snell, Roundhand, cursive;
+            font-weight: bold;
+}
+div { margin: 0 auto;
+        width: 60%; 
+        height: 20%;
+        padding: 30px;
+        color: black;
+        background-color: beige;
+}
+
+section { 
+        padding: 0 200px;
+       
+}
+
+section h2 {font-size: 30px;
+            color: darksalmon;}
+footer {background-color: dimgray;
+        margin: 0px auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 56%; 
+        padding: 1px;
+        text-align: right;
+        padding-right: 120px;
+        color: beige;
+        display: inline-block
+        
+        }
+footer a { color: darksalmon;
+}
