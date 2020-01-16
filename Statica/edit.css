@@ -1,0 +1,64 @@
+body {
+    
+    font-family: 'Cabin', sans-serif;
+    color: rgb(91, 106, 119);
+    background-color:  rgb(244, 248, 252);
+}
+
+.circle{
+    border: 1.5px solid rgb(161, 187, 210);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    top: 112px;
+}
+
+.right{
+ left: 343px;
+}
+
+.left{
+    left: 52px
+}
+
+.edit {
+    text-transform: none;
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 50px;
+    padding: 0 20px;
+    width: 250px;
+    height: 60px;
+    background-color: white;
+    border: 1.5px solid rgb(161, 187, 210);
+    border-radius: 0.5rem;
+    z-index: -2;
+}
+
+.semicolon{
+    color: rgb(180, 182, 184);
+}
+
+.arrow {
+    transform: scale(0.7);
+    z-index: -1;
+}
+
+.position {
+    color: rgb(0, 112, 206);
+}
+
+.symbol {
+    color: rgb(200, 132, 82)
+}
+
+.active {
+    padding: 20.5px 0;
+    background-color: rgb(238, 239, 241);
+}

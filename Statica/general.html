@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="ticker.css"> 
+        <link rel="stylesheet" type="text/css" href="edit.css"> 
+        <title>Statica</title>        
+    </head>
+    <body> 
+        <button class="trigger">ticker manager</button>
+        <section class="modal">
+            <div class="modal-content">
+                <h3>Ticker Manager</h3>
+                <div class="modal-content-container">
+                    <div class="modal-content-box">
+                        <h6>Add Ticker:</h6>
+                        <div class="input-container">
+                            <input>
+                            <img class="search" src="search.png">
+                        </div>
+                    </div>
+                    <div class="modal-content-box ticker-box">
+                        <h6>Delete Ticker:</h6>
+                        <div class="ticker-container">
+                            <div class="ticker">
+                                <div class="squere"></div>
+                                <p>lotos</p>
+                                <span class="delete">&times;</span>
+                            </div>
+                            <div class="ticker">
+                                <div class="squere wig20"></div>
+                                <p>wig20</p>
+                                <span class="delete">&times;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button>cancel</button>
+                        <button>accept</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="edit-container">
+            <div class="circle right"></div>
+            <div class="circle left"></div>
+            <div class="edit">
+                <div class="box">
+                    <span class="position">c1</span>
+                    <span class="semicolon">:</span>
+                    <span class="active">SMA(20)</span>
+                </div>
+                <img class="arrow" src="arrow.png">
+                <div class="box">
+                    <span class="symbol">KGHM</span>
+                    <span class="semicolon">:</span>
+                    <span>tradePrice</span>
+                </div>
+            </div>
+        </section>
+        <script src="code.js"></script>
+    </body>
+</html>
